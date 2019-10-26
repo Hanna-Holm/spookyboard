@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spookyboard</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Creepster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="headline">
+            <h1>Spookyboard</h1>
+            <h2>Javascript Events</h2>
+            <p>Press one of these keys on your keyboard to get (not so) spooky sounds!</p>
+        </header>
+        <main class="board">
+            <div data-key="90" class="key">
+                <kbd>Z</kbd>
+                <span>Desk bell</span>
+            </div>
+            <div data-key="88" class="key">
+                <kbd>X</kbd>
+                <span>Marbles</span>
+            </div>
+            <div data-key="67" class="key">
+                <kbd>C</kbd>
+                <span>Poker chips</span>
+            </div>
+        </main>
+        <!-- Audio -->
+        <audio data-key="90" src="./assets/audio/front-desk-bells-daniel_simon.wav"></audio>
+        <audio data-key="88" src="./assets/audio/marbles-daniel_simon.wav"></audio>
+        <audio data-key="67" src="./assets/audio/poker-chips-daniel_simon.wav"></audio>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
